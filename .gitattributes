@@ -1,0 +1,5 @@
+*.json -linguist-detectable
+*.txt -linguist-detectable
+*.svg -linguist-detectable
+src/font/* linguist-vendored
+src/index.css -linguist-detectable
