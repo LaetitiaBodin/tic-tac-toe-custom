@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('font/notosans-regular.eot');
+    src: url('font/notosans-regular.eot?#iefix') format('embedded-opentype'),
+         url('font/notosans-regular.woff2') format('woff2'),
+         url('font/notosans-regular.woff') format('woff'),
+         url('font/notosans-regular.ttf') format('truetype'),
+         url('font/notosans-regular.svg#noto_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$Foam: #e0fbfc;
+$AquaIsland: #98c1d9;
+$EastBay:#3d5a80;
+$EbonyClay: #293241;
+  
+body {
+    background-color: $AquaIsland;
+    text-align: center;
+}
+
+h1 {
+    color: $EbonyClay;
+    font-size: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+
+.setup--block {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 420px;
+    max-width: 80%;
+    button {
+        margin: 10px;
+        width: 150px;
+    }
+}
+
+.game--board {
+    margin: 20px auto;
+    display: grid;
+    width: 420px;
+    max-width: 80%;
+    grid-gap: 4px;
+}
+
+canvas {
+    width: 100%;
+    background-color: $Foam;
+}
+
+p {
+    color: $EbonyClay;
+    font-size: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+
+button {
+    background-color: $Foam;
+    color: $EbonyClay;
+    font-size: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px outset $EastBay;
+    transition: 0.3s;
+    &:hover {
+        cursor: pointer;
+        background-color: $EbonyClay;
+        color: $Foam;
+    }
+    &:active {
+        border: 4px inset $EastBay;
+    }
+}
