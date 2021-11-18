@@ -51,6 +51,15 @@ h1 {
 canvas {
     width: 100%;
     background-color: $Foam;
+    opacity: 0.7;
+    transition: 0.3s;
+    &.filled {
+        opacity: 1;
+    }
+    &:not(.filled):hover {
+        opacity: 1;
+        cursor: pointer;
+    }
 }
 
 p {

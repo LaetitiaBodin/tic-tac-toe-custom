@@ -49,6 +49,18 @@ h1 {
 canvas {
   width: 100%;
   background-color: #e0fbfc;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+canvas.filled {
+  opacity: 1;
+}
+
+canvas:not(.filled):hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 p {
